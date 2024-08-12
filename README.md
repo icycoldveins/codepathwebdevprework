@@ -34,7 +34,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-![Video Walkthrough](public/prework.gif)
+![Video Walkthrough](public/untitled.gif)
 
 GIF created with ... **ADOBE**
 
