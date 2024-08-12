@@ -15,15 +15,16 @@ const ContentCreatorCard = ({ creator }) => {
     setOpen(false);
   };
 
-  const handleViewDetailsClick = (e) => {
+  const handleEditClick = (e) => {
     e.stopPropagation();
-    handleClickOpen();
+    navigate(`/edit/${creator.id}`);
   };
 
   return (
     <>
       <Card 
         sx={{ maxWidth: 700, margin: '20px auto', padding: '20px', boxShadow: 3 }}
+        onClick={handleClickOpen}
       >
         {creator.imageURL && (
           <CardMedia
@@ -54,14 +55,11 @@ const ContentCreatorCard = ({ creator }) => {
         </CardContent>
         <CardActions>
           <Box sx={{ display: 'flex', justifyContent: 'space-between', width: '100%' }}>
-            <Button size="large" href={creator.url} target="_blank" rel="noopener noreferrer">
+            <Button size="large" href={creator.url} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}>
               Visit
             </Button>
-            <Button size="large" component={Link} to={`/edit/${creator.id}`}>
+            <Button size="large" onClick={handleEditClick}>
               Edit
-            </Button>
-            <Button size="large" onClick={handleViewDetailsClick}>
-              View Details
             </Button>
           </Box>
         </CardActions>
@@ -80,6 +78,11 @@ const ContentCreatorCard = ({ creator }) => {
           )}
           <Typography variant="body1" color="text.secondary" paragraph>
             {creator.description}
+          </Typography>
+          <Typography variant="body2" color="primary">
+            <a href={creator.url} target="_blank" rel="noopener noreferrer">
+              {creator.url}
+            </a>
           </Typography>
         </DialogContent>
         <DialogActions>
