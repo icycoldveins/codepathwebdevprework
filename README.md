@@ -34,7 +34,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-![Video Walkthrough](public/untitled.gif)
+![Video Walkthrough](codepathproj/public/Untitled.gif)
 
 GIF created with ... **ADOBE**
 
