@@ -40,6 +40,7 @@ GIF created with ... **LiceCap**
 
 ## Notes
 
+
 One challenge encountered was ensuring that the API calls were efficient and handled errors gracefully. Additionally, making the layout responsive across different screen sizes required careful planning and testing.
 
 ## License
