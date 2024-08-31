@@ -36,7 +36,7 @@ Here's a walkthrough of implemented required features:
 
 ![Video Walkthrough](/public/chrome-capture-2024-8-10.gif)
 
-GIF created with ... **ADOBE**
+GIF created with ... **LiceCap**
 
 ## Notes
 
